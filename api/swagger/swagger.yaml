@@ -1,0 +1,23 @@
+swagger: "2.0"
+info:
+  description: "Floor management api documentation"
+  version: "1.0.0"
+  title: "floormgmt"
+  # termsOfService: "http://swagger.io/terms/"
+  contact:
+    email: "snehalshewate1@gmail.com"
+  # license:
+  #   name: "Apache 2.0"
+  #   url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "localhost"
+basePath: "/api"
+schemes:
+- "http"
+- "https"
+securityDefinitions:
+  Bearer:
+    description: For accessing the API a valid token must be passed in all the queries
+    type: apiKey
+    name: Authorization
+    in: header
+  # paths:
